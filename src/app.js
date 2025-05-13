@@ -7,13 +7,13 @@ import cookieParser from "cookie-parser"
 const app = express()
 
 app.use(cors({
-    origin:'http://localhost:8080',
+    origin:'https://zero-print-frontend.vercel.app/',
     credentials:true
 }))
 
 
 dotenv.config({
-    path:"../.env"
+    path:'./.env'
 })
 
 

@@ -2,15 +2,15 @@ import { app } from "./app.js";
 import dbConnection from "./db/index.js";
 
 
-const PORT = 3400
+
 dbConnection()
 .then(()=>{
 
         app.get('/',(req,res)=>{
-            res.send("jo")
+            res.send("Backend")
         })
-        app.listen(PORT,(req,res)=>{
-            console.log(`Server is running at http://localhost:${PORT}/`)
+        app.listen(process.env.PORT || 2300,(req,res)=>{
+            console.log(`Server is running at http://localhost:${process.env.PORT}/`)
         })
     
     
