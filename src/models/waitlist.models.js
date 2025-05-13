@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { timestamp } from "rxjs";
+
 
 const waitlistSchema  = new mongoose.Schema({
 
