@@ -7,7 +7,8 @@ import cookieParser from "cookie-parser"
 const app = express()
 
 app.use(cors({
-    origin:'https://zero-print-frontend.vercel.app/',
+    origin:["https://zero-print-frontend.vercel.app"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials:true
 }))
 
